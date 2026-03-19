@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Farmers | DirectFarm</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .farmer-form {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    .farmer-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .farmer-form input, .farmer-form select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .farmer-form .btn {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .farmer-form .btn:hover {
+      background-color: #218838;
+    }                                                                                         
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DirectFarm</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="farmer.html" class="active">For Farmers</a></li>
+        <li><a href="consumer.html">For Consumers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <h2>Farmer Product Submission</h2>
+    <p>List your fresh produce directly for consumers to view and buy.</p>
+
+    <form class="farmer-form">
+      <label for="farmer-name">Farmer Name:</label>
+      <input type="text" id="farmer-name" name="farmer-name" placeholder="Enter your name" required>
+
+      <label for="product-name">Product Name:</label>
+      <input type="text" id="product-name" name="product-name" placeholder="e.g. Organic Tomatoes" required>
+
+      <label for="quantity">Quantity Available (in kg):</label>
+      <input type="number" id="quantity" name="quantity" placeholder="e.g. 50" required>
+
+      <label for="price">Price per kg (₹):</label>
+      <input type="number" id="price" name="price" placeholder="e.g. 30" required>
+
+      <label for="location">Farm Location:</label>
+      <input type="text" id="location" name="location" placeholder="Village/City name" required>
+
+      <label for="photo">Upload Product Image:</label>
+      <input type="file" id="photo" name="photo">
+
+      <button type="submit" class="btn">Submit Product</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DirectFarm | Empowering Farmers</p>
+  </footer>
+</body>
+</html>
